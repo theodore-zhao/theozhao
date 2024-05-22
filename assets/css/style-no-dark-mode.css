@@ -116,36 +116,34 @@ a:hover {
   margin: 0 auto;
   width: 100%;
   max-width: 1080px; /* Maintain a maximum width */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
   -webkit-font-smoothing: subpixel-antialiased;
-  float: left;
-  padding-top: 4em;
-  position: relative; /* Change to relative for better mobile handling */
   text-align: center;
-  width: 100%; /* Adjust to full width for responsiveness */
-  max-width: 200px; /* Maintain a maximum width */
-  margin-bottom: 20px; /* Add margin-bottom for spacing */
+  width: 200px; /* Set a fixed width for the header */
+  flex: 0 0 200px; /* Ensure the header does not shrink */
+  padding-top: 4em;
 }
 
 section {
-  margin-left: 0; /* Remove left margin for full width */
+  margin-left: 255px; /* Adjust the left margin to make the section wider */
   padding-bottom: 50px;
   padding-top: 4em;
-  width: 100%; /* Adjust to full width for responsiveness */
-  max-width: 860px; /* Maintain a maximum width */
+  width: calc(100% - 255px); /* Adjust the width */
+  flex: 1; /* Allow the section to grow */
 }
 
 .footer {
   -webkit-font-smoothing: subpixel-antialiased;
   bottom: 5px;
-  float: right;
-  position: relative; /* Change to relative for better mobile handling */
   text-align: center;
-  width: 100%; /* Adjust to full width for responsiveness */
-  max-width: 280px; /* Maintain a maximum width */
-  margin-top: 20px; /* Add margin-top for spacing */
+  width: 280px; /* Adjust the width to match header */
+  flex: 0 0 280px; /* Ensure the footer does not shrink */
+  position: fixed;
+  right: 0;
 }
 
 .image {
@@ -364,33 +362,32 @@ section {
   .wrapper {
     margin: 0;
     width: auto;
+    flex-direction: column;
   }
 
   header, section, .footer {
     float: none;
     position: static;
-    width: auto;
+    width: 100%;
   }
 
   header {
-    padding-right: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 
   section {
-    border: 1px solid #e5e5e5;
-    border-width: 1px 0;
-    margin: 0 0 20px;
-    padding: 20px 0;
+    margin-left: 0;
+    padding: 20px;
+    width: 100%;
   }
 
-  header a small {
-    display: inline;
-  }
-
-  header ul {
-    position: static;
-    right: auto;
-    top: auto;
+  .footer {
+    bottom: 0;
+    float: none;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 
   .image.avatar img {
@@ -419,7 +416,7 @@ section {
   }
 
   header li, header ul li + li + li {
-    width: 33%;
+    width: 100%;
   }
 
   .image.avatar img {
