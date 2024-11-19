@@ -90,8 +90,8 @@
           <p>I am a Senior Applied Scientist at <a href="https://www.microsoft.com/" target="_blank" rel="noopener">Microsoft, Health and Life Sciences Research</a>. Currently, I focus on creating state of the art foundation models for healthcare AI. Some of my recent work include:</p>
           <ul>
             <li><strong>Large Multimodal Foundation Model:</strong> Image Analysis, Segmentation, Generation  </li>
-            <li><strong>Machine Learning:</strong> Time Series, Self-Superversion, Error Detection </li>
-            <li><strong>LLMs For Healthcare:</strong> Cancer Diagnosis and Registration </li>
+            <li><strong>Machine Learning:</strong> Time Series, Self-Superversion, LLM Error Detection, Multiscale analysis </li>
+            <li><strong>LLMs For Healthcare:</strong> Cancer Diagnosis and Staging </li>
           </ul>
           <p>I received my PhD and Master degrees in Applied Mathematics from <a href="https://www.washington.edu/" target="_blank" rel="noopener">University of Washington </a>, advised by <a href="https://sites.google.com/site/timleungresearch/" target="_blank" rel="noopener">Prof. Tim Leung</a>. I also worked at Microsoft, Harborview Medical Center, Rotella Capital Management, and Parametric as an Intern. I received my Bachelor degree in Physics from <a href="https://www.fudan.edu.cn/en/" target="_blank" rel="noopener">Fudan University</a> in Shanghai, China.</p>
         </div>
@@ -100,8 +100,9 @@
           <h2 id="news">News</h2>
           <ul>
             <!-- Check！！  -->
-            <li><strong>[May. 2024]</strong> We released <a href="https://microsoft.github.io/BiomedParse/" target="_blank" rel="noopener">BiomedPrase</a>, a biomedical foundation model for image parsing of everything everywhere all at once! With one model, we can perform segmentation, detection and obeject recognition for biomedical images of 9 modalities! <a href="https://arxiv.org/abs/2405.12971">Take a Look!</a> </li>
-            <li><strong>[May. 2024]</strong> Our paper on <a href="https://arxiv.org/abs/2306.16564">LLM Error Detection</a> is accepted by <a href="https://2024.aclweb.org/">ACL 2024</a>. See you in Bangkok!</li>
+            <li><strong>[Nov. 2024]</strong> <a href="https://www.nature.com/articles/s41592-024-02499-w" target="_blank" rel="noopener">BiomedPrase</a> is in Nature Methods! We are also releasing the <a href="https://github.com/microsoft/BiomedParse" target="_blank" rel="noopener">code</a>, <a href="https://huggingface.co/microsoft/BiomedParse" target="_blank" rel="noopener">model</a>, and a million scale text promptable medical image segmentation <a href="https://huggingface.co/datasets/microsoft/BiomedParseData" target="_blank" rel="noopener">dataset</a>. </li>
+            <li><strong>[May. 2024]</strong> Proud to lead the <a href="https://microsoft.github.io/BiomedParse/" target="_blank" rel="noopener">BiomedPrase</a> project. We presented a foundation model for joint segmentation, detection and recognition of biomedical objects across nine modalities. Various medical image analysis tasks are unified with natural language prompting. </li>
+            <li><strong>[May. 2024]</strong> Our paper on <a href="https://aclanthology.org/2024.acl-long.566/">LLM Error Detection</a> is accepted by <a href="https://2024.aclweb.org/">ACL 2024</a>. See you in Bangkok!</li>
             <li><strong>[April. 2024]</strong> I am giving a talk at <a href="https://ww2.amstat.org/meetings/jsm/2024/" target="_blank" rel="noopener">2024 Joint Statistical Meetings</a> on 08/05/2024 in Portland.</li>
           </ul>
         </div>
@@ -114,21 +115,24 @@
               <li>
                 <div class="pub-row row">
                   <div class="col-sm-3 abbr">
-                    <img src="./assets/img/CT-Abdomen_short.gif" class="teaser img-fluid z-depth-1" alt="Publication Teaser Image">
+                    <img src="./assets/img/BIOMEDPARSE_holsoyka-short.jpg" class="teaser img-fluid z-depth-1" alt="Publication Teaser Image">
                   </div>
                   <div class="col-sm-9">
-                    <div class="title"><a href="https://arxiv.org/abs/2405.12971">BiomedPrase: a biomedical foundation model for image parsing of everything everywhere all at once</a></div>
-                    <div class="author"><strong>Theodore Zhao</strong>, Yu Gu, Jianwei Yang, Naoto Usuyama, Ho Hin Lee, Tristan Naumann, Jianfeng Gao, Angela Crabtree, Brian Piening, Carlo Bifulco, Mu Wei, Hoifung Poon, Sheng Wang</div>
+                    <div class="title"><a href="https://www.nature.com/articles/s41592-024-02499-w">A foundation model for joint segmentation, detection and recognition of biomedical objects across nine modalities</a></div>
+                    <div class="author"><strong>Theodore Zhao</strong>, Yu Gu, Jianwei Yang, Naoto Usuyama, Ho Hin Lee, Sid Kiblawi, Tristan Naumann, Jianfeng Gao, Angela Crabtree, Jacob Abel, Christine Moung-Wen, Brian Piening, Carlo Bifulco, Mu Wei, Hoifung Poon, Sheng Wang</div>
                     <div class="periodical">
-                      <em><strong><u>Preprint</u></strong>, 2024</em>
+                      <em><strong><u>Nature Methods</u></strong>, 2024</em>
                       <div class="links ml-2">
-                        <a href="https://arxiv.org/pdf/2405.12971" class="btn btn-sm z-depth-0" role="button" target="_blank">[PDF]</a>
+                        <a href="https://www.nature.com/articles/s41592-024-02499-w" class="btn btn-sm z-depth-0" role="button" target="_blank">[PAPER]</a>
                         <a href="https://microsoft.github.io/BiomedParse/" class="btn btn-sm z-depth-0" role="button" target="_blank">[DEMO]</a>
-                       <!--<a href="https://microsoft.github.io/BiomedParse/" class="btn btn-sm z-depth-0" role="button" target="_blank">[BLOG]</a> --> 
+                       <a href="https://www.microsoft.com/en-us/research/blog/biomedparse-a-foundation-model-for-smarter-all-in-one-biomedical-image-analysis/" class="btn btn-sm z-depth-0" role="button" target="_blank">[BLOG]</a> 
+                        <a href="https://github.com/microsoft/BiomedParse" class="btn btn-sm z-depth-0" role="button" target="_blank">[CODE]</a>
+                        <a href="https://huggingface.co/microsoft/BiomedParse" class="btn btn-sm z-depth-0" role="button" target="_blank">[MODEL]</a>
+                        <a href="https://huggingface.co/datasets/microsoft/BiomedParseData" class="btn btn-sm z-depth-0" role="button" target="_blank">[DATA]</a>
                       </div>
                     </div>
                     <div class="description mt-2">
-                      <em>We propose BiomedParse, a biomedical foundation model for imaging parsing that can jointly conduct segmentation, detection, and recognition for 82 object types across 9 imaging modalities. </em>
+                      <em>We propose BiomedParse, a biomedical foundation model that can jointly conduct segmentation, detection and recognition across nine imaging modalities. </em>
                     </div>
                   </div>
                 </div>
