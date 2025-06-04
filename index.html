@@ -87,11 +87,11 @@
         <div class="about-me-section">
           <h2 id="about-me">About Me</h2>
           <!--Introducation! Part -->
-          <p>I am a Senior Applied Scientist at <a href="https://www.microsoft.com/" target="_blank" rel="noopener">Microsoft, Health and Life Sciences Research</a>. Currently, I focus on creating state of the art foundation models for healthcare AI. Some of my recent work include:</p>
+          <p>I am a Senior Applied Scientist at <a href="https://www.microsoft.com/" target="_blank" rel="noopener">Microsoft, Health and Life Sciences Research</a>. Currently, I focus on creating state of the art foundation models for healthcare AI. My recent research interest includes:</p>
           <ul>
-            <li><strong>Large Multimodal Foundation Model:</strong> Image Analysis, Segmentation, Generation  </li>
-            <li><strong>Machine Learning:</strong> Time Series, Self-Superversion, LLM Error Detection, Multiscale analysis </li>
-            <li><strong>LLMs For Healthcare:</strong> Cancer Diagnosis and Staging </li>
+            <li><strong>Visoin & Multimodal Foundation Model:</strong> Vision-language Understanding, Segmentation, Representation Learning  </li>
+            <li><strong>Machine Learning:</strong> Self-Supervised Learning, Optimization, Time Series, Multiscale analysis </li>
+            <li><strong>Biomedical/Healthcare Applications:</strong> Cancer Diagnosis and Staging, Tumor/lesion Detection and Segmentation, Foundation Models </li>
           </ul>
           <p>I received my PhD and Master degrees in Applied Mathematics from <a href="https://www.washington.edu/" target="_blank" rel="noopener">University of Washington </a>, advised by <a href="https://sites.google.com/site/timleungresearch/" target="_blank" rel="noopener">Prof. Tim Leung</a>. I also worked at Microsoft, Harborview Medical Center, Rotella Capital Management, and Parametric as an Intern. I received my Bachelor degree in Physics from <a href="https://www.fudan.edu.cn/en/" target="_blank" rel="noopener">Fudan University</a> in Shanghai, China.</p>
         </div>
@@ -100,6 +100,7 @@
           <h2 id="news">News</h2>
           <ul>
             <!-- Check！！  -->
+            <li><strong>[Nov. 2024]</strong> <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhao_Boltzmann_Attention_Sampling_for_Image_Analysis_with_Small_Objects_CVPR_2025_paper.pdf" target="_blank" rel="noopener">BoltzFormer</a> is accepted at CVPR 2025! See you in Nashville! </li>
             <li><strong>[Nov. 2024]</strong> <a href="https://www.nature.com/articles/s41592-024-02499-w" target="_blank" rel="noopener">BiomedPrase</a> is in Nature Methods! We are also releasing the <a href="https://github.com/microsoft/BiomedParse" target="_blank" rel="noopener">code</a>, <a href="https://huggingface.co/microsoft/BiomedParse" target="_blank" rel="noopener">model</a>, and a million scale text promptable medical image segmentation <a href="https://huggingface.co/datasets/microsoft/BiomedParseData" target="_blank" rel="noopener">dataset</a>. </li>
             <li><strong>[May. 2024]</strong> Proud to lead the <a href="https://microsoft.github.io/BiomedParse/" target="_blank" rel="noopener">BiomedPrase</a> project. We presented a foundation model for joint segmentation, detection and recognition of biomedical objects across nine modalities. Various medical image analysis tasks are unified with natural language prompting. </li>
             <li><strong>[May. 2024]</strong> Our paper on <a href="https://aclanthology.org/2024.acl-long.566/">LLM Error Detection</a> is accepted by <a href="https://2024.aclweb.org/">ACL 2024</a>. See you in Bangkok!</li>
@@ -111,6 +112,27 @@
           <h2 id="publications">Recent Works</h2>
           <div class="publications">
             <ol class="bibliography">
+              <li>
+                <div class="pub-row row">
+                  <div class="col-sm-3 abbr">
+                    <img src="./assets/img/Attention.png" class="teaser img-fluid z-depth-1" alt="Publication Teaser Image">
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="title"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhao_Boltzmann_Attention_Sampling_for_Image_Analysis_with_Small_Objects_CVPR_2025_paper.pdf">Boltzmann Attention Sampling for Image Analysis with Small Objects</a></div>
+                    <div class="author"><strong>Theodore Zhao</strong>*, Sid Kiblawi*, Naoto Usuyama, Hohin Lee, J Samuel Preston, Hoifung Poon, Mu Wei^</div>
+                    <div class="periodical">
+                      <em><u><strong>CVPR, </strong></u>2025 </em>
+                    <div class="links ml-2">
+                     <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhao_Boltzmann_Attention_Sampling_for_Image_Analysis_with_Small_Objects_CVPR_2025_paper.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">[PDF]</a>
+                    </div> 
+                  
+                    </div>
+                    <div class="description mt-2">
+                      <em>We used Boltzmann sampling in the attention mechanism with temperature annealing, and achieved superior performance in aligning small regions in the image with language instructions.</em>
+                    </div>
+                  </div>
+                </div>
+              </li>
               
               <li>
                 <div class="pub-row row">
@@ -119,7 +141,7 @@
                   </div>
                   <div class="col-sm-9">
                     <div class="title"><a href="https://www.nature.com/articles/s41592-024-02499-w">A foundation model for joint segmentation, detection and recognition of biomedical objects across nine modalities</a></div>
-                    <div class="author"><strong>Theodore Zhao</strong>, Yu Gu, Jianwei Yang, Naoto Usuyama, Ho Hin Lee, Sid Kiblawi, Tristan Naumann, Jianfeng Gao, Angela Crabtree, Jacob Abel, Christine Moung-Wen, Brian Piening, Carlo Bifulco, Mu Wei, Hoifung Poon, Sheng Wang</div>
+                    <div class="author"><strong>Theodore Zhao</strong>*, Yu Gu*, Jianwei Yang, Naoto Usuyama, Ho Hin Lee, Sid Kiblawi, Tristan Naumann, Jianfeng Gao, Angela Crabtree, Jacob Abel, Christine Moung-Wen, Brian Piening, Carlo Bifulco, Mu Wei, Hoifung Poon, Sheng Wang</div>
                     <div class="periodical">
                       <em><strong><u>Nature Methods</u></strong>, 2024</em>
                       <div class="links ml-2">
@@ -154,7 +176,7 @@
                   
                     </div>
                     <div class="description mt-2">
-                      <em>We utilized Pareto optimal ledarning to estimate LLM error and increase the performance, surpassing state-of-the-art task specific models.</em>
+                      <em>We utilized Pareto optimal learning to estimate LLM error and increase the performance, surpassing state-of-the-art task specific models.</em>
                     </div>
                   </div>
                 </div>
